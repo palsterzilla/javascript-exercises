@@ -5,7 +5,11 @@ const convertToCelsius = function(val) {
   return finalVal
 };
 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(val) {
+  let convertVal = val * 9/5 + 32
+  let finalVal = Number(convertVal.toFixed(1))
+  
+  return finalVal
 };
 
 // Do not edit below this line
