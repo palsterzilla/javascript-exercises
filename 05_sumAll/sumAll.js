@@ -1,6 +1,8 @@
 const sumAll = function(...args) {
   if (args[1] < args[0]) {
     args.sort()
+  } else if (args.some(x => x < 0)) {
+    return "ERROR"
   }
   
   let finalNum = 0;
