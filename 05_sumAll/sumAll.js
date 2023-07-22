@@ -1,4 +1,8 @@
 const sumAll = function(...args) {
+  if (args[1] < args[0]) {
+    args.sort()
+  }
+  
   let finalNum = 0;
 
   for (let i = args[0]; i <= args[1]; i++) {
